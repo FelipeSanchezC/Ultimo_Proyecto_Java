@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id("net.serenity-bdd.serenity-gradle-plugin") version "3.6.7"
+}
+
+group = "org.example"
+version = "1.0-SNAPSHOT"
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+ext{
+    //serenityVersion = '2.1.4'
+    serenityVersion = '3.6.12'
+    //serenityCucumberVersion = '1.9.51'
+    serenityCucumberVersion = '3.6.12'
+    restassuredVersion = '4.2.0'
+    devcoVersion = '1.18.4'
+    junitVersion = '5.9.2'
+}
+
+dependencies {
+    implementation "org.junit.jupiter:junit-jupiter-api:$rootProject.ext.junitVersion"
+//  implementation "junit:junit:$rootProject.ext.junitVersion"
+    implementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+    implementation "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
+    implementation group: 'com.fasterxml.jackson.core', name:'jackson-databind', version:'2.0.1'
+    implementation group: 'com.codoid.products', name: 'fillo', version: '1.18'
+//  implementation 'org.slf4j:slf4j-api:1.7.30'
+//  implementation 'org.slf4j:slf4j-simple:1.7.30'
+    implementation 'org.hamcrest:hamcrest:2.2'
+//  implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.11.1'
+}
+
+test {
+    systemProperties System.getProperties()
+    systemProperty "file.enconding", "UTF-8"
+    systemProperty "cucumber.options", System.properties.getProperty("cucumber.options")
+    testLogging.showStandardStreams = true
+}

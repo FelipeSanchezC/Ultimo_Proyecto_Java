@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="856c2a00d6d4bd25eceb5bb30b652c90a563786a6b63b6ef44202adc5da9ffc9.html">Validar El Flujo De Registros De Usuarios</a></span>
+                > <span class="truncate-60"><a
+                    href="f4efa9f68693d4158eca3e15ca4d48ec27a02ae0959a84fa6b61104cf2ff4619.html">Realizar el registro de forma correct de un usuario nuevo </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 04-11-2023 09:20</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Validar El Flujo De Registros De Usuarios </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como automatizador<br />
+Necesito validar los flujos de registros para nuevos usuarios<br />
+Para validar el correcto funcionamiento de la web
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="2c53234daf61fe4384a34ce8da55b02d47f2e9c76b50ccbc08b760490bceff23.html">Test Case3
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Realizar el registro de forma correct de un usuario nuevo
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element click intercepted exception: element click intercepted: Element (input name='state_/_province_/_regionRegisterPage' type='text' data-ng-model='secModel' class='ng-pristine ng-untouched ng-valid ng-scope') is not clickable at point (1142, 366). Other element would receive the click: (label data-ng-click='labelClicked()' data-ng-mouseout='labelOut()')...(/label)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.ElementClickInterceptedException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>tasks.register.createNewUser.performAs(createNewUser.java:73)<br />stepDefinitions.registerUser.registerUser.completarInforRegistro(registerUser.java:22)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:132)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)<br />io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:132)<br />io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:114)<br />io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:115)<br />io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:84)<br />io.cucumber.core.runtime.Runtime.execute(Runtime.java:99)<br />io.cucumber.core.runtime.Runtime.run(Runtime.java:82)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource528832268695258986.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="a02336ebb5e1c091914589c965fa993ff782f2ea1eb5dc0717fe70a7bf12ce9a.png" title=" Given Me encuentro en el Home de la pagina" width="3456"/>
+                <img src="a02336ebb5e1c091914589c965fa993ff782f2ea1eb5dc0717fe70a7bf12ce9a.png" title=" Automatizador opens the Home page ui" width="3456"/>
+                <img src="a02336ebb5e1c091914589c965fa993ff782f2ea1eb5dc0717fe70a7bf12ce9a.png" title=" Given Me encuentro en el Home de la pagina (completed)" width="3456"/>
+                <img src="69ef77d1077d78f6fbf120e28185ab2291a0fca1abce96710791273289a6596d.png" title=" And Selecciono la opcion de Login en la pagina web" width="3456"/>
+                <img src="69ef77d1077d78f6fbf120e28185ab2291a0fca1abce96710791273289a6596d.png" title=" Automatizador login page task" width="3456"/>
+                <img src="69ef77d1077d78f6fbf120e28185ab2291a0fca1abce96710791273289a6596d.png" title=" Automatizador clicks on Boton del home Page para el ingreso al login" width="3456"/>
+                <img src="94c62368601fae7e2e24a9afbda53ae38bff9fb784a97dd8b32ff1be31fdc460.png" title=" Automatizador clicks on Boton del home Page para el ingreso al login (completed)" width="3456"/>
+                <img src="6d2f129febb847b8e0c2054f20964ae0cf39ab836644c96ccd315aefcd345283.png" title=" Automatizador login page task (completed)" width="3456"/>
+                <img src="6d2f129febb847b8e0c2054f20964ae0cf39ab836644c96ccd315aefcd345283.png" title=" And Selecciono la opcion de Login en la pagina web (completed)" width="3456"/>
+                <img src="6d2f129febb847b8e0c2054f20964ae0cf39ab836644c96ccd315aefcd345283.png" title=" When Selecciono la opcion de Crear cuenta y complemento la informacion
+| username | Pruebas961218 |
+| email | pruebas9612@pruebas.com |
+| password | PruebasP1 |" width="3456"/>
+                <img src="6d2f129febb847b8e0c2054f20964ae0cf39ab836644c96ccd315aefcd345283.png" title=" Automatizador create new user" width="3456"/>
+                <img src="18fb3c421ba06b9616c0ab32c767f7c3288c43bbc544a7d0f6059ac6e2e44986.png" title=" Automatizador clicks on Locator del boton para crear una nueva cuenta" width="3456"/>
+                <img src="8cf6226383e2e3afb1a9808fb8895f4b1f69b80b6b236431eeacf77aee62eca2.png" title=" Automatizador clicks on Locator del boton para crear una nueva cuenta (completed)" width="3456"/>
+                <img src="8cf6226383e2e3afb1a9808fb8895f4b1f69b80b6b236431eeacf77aee62eca2.png" title=" Automatizador clicks on Elemento input con name name y texto usernameRegisterPage" width="3456"/>
+                <img src="a40edbe05b85951c575e353653e08b28065372634f8dea53eb51e71e42b106f3.png" title=" Automatizador clicks on Elemento input con name name y texto usernameRegisterPage (completed)" width="3456"/>
+                <img src="a40edbe05b85951c575e353653e08b28065372634f8dea53eb51e71e42b106f3.png" title=" Automatizador enters 'Pruebas961218' into Elemento input con name name y texto usernameRegisterPage" width="3456"/>
+                <img src="48a44445b2d632a92463f9525e6656819093ec44c3c8580742122222ffed9fce.png" title=" Automatizador enters 'Pruebas961218' into Elemento input con name name y texto usernameRegisterPage (completed)" width="3456"/>
+                <img src="48a44445b2d632a92463f9525e6656819093ec44c3c8580742122222ffed9fce.png" title=" Automatizador clicks on Elemento input con name name y texto emailRegisterPage" width="3456"/>
+                <img src="57ad9b0cc5f191d26b8b8af44d581e744059da03a374777246c8107ebd86f1f5.png" title=" Automatizador clicks on Elemento input con name name y texto emailRegisterPage (completed)" width="3456"/>
+                <img src="57ad9b0cc5f191d26b8b8af44d581e744059da03a374777246c8107ebd86f1f5.png" title=" Automatizador enters 'pruebas9612@pruebas.com' into Elemento input con name name y texto emailRegisterPage" width="3456"/>
+                <img src="c6badc18c73ddcb0f4d24fa8520293cf1f465c00b4d65ab46461f799eb7618d8.png" title=" Automatizador enters 'pruebas9612@pruebas.com' into Elemento input con name name y texto emailRegisterPage (completed)" width="3456"/>
+                <img src="c6badc18c73ddcb0f4d24fa8520293cf1f465c00b4d65ab46461f799eb7618d8.png" title=" Automatizador clicks on Elemento input con name name y texto passwordRegisterPage" width="3456"/>
+                <img src="57c6a8df9cc52258bdf1be3e1407f62eb74d3ebe9f68e7e3a8b4bd8daaca9cbf.png" title=" Automatizador clicks on Elemento input con name name y texto passwordRegisterPage (completed)" width="3456"/>
+                <img src="57c6a8df9cc52258bdf1be3e1407f62eb74d3ebe9f68e7e3a8b4bd8daaca9cbf.png" title=" Automatizador enters 'PruebasP1' into Elemento input con name name y texto passwordRegisterPage" width="3456"/>
+                <img src="4f598d803daa1da2b6db5978c1e04a40869f3a2f258ed20d1a19f8c49db663dc.png" title=" Automatizador enters 'PruebasP1' into Elemento input con name name y texto passwordRegisterPage (completed)" width="3456"/>
+                <img src="4f598d803daa1da2b6db5978c1e04a40869f3a2f258ed20d1a19f8c49db663dc.png" title=" Automatizador clicks on Elemento input con name name y texto confirm_passwordRegisterPage" width="3456"/>
+                <img src="693ed87d069f5f97dc79a0b5f590ba4233838d41d71a9430b6a9ec19c1928fcc.png" title=" Automatizador clicks on Elemento input con name name y texto confirm_passwordRegisterPage (completed)" width="3456"/>
+                <img src="693ed87d069f5f97dc79a0b5f590ba4233838d41d71a9430b6a9ec19c1928fcc.png" title=" Automatizador enters 'PruebasP1' into Elemento input con name name y texto confirm_passwordRegisterPage" width="3456"/>
+                <img src="48e33868b310c9f9071960fb82c4f207475d662a92a6da04583dc15fe44127a0.png" title=" Automatizador enters 'PruebasP1' into Elemento input con name name y texto confirm_passwordRegisterPage (completed)" width="3456"/>
+                <img src="48e33868b310c9f9071960fb82c4f207475d662a92a6da04583dc15fe44127a0.png" title=" Automatizador clicks on Elemento input con name name y texto first_nameRegisterPage" width="3456"/>
+                <img src="0932cbcfbc6ca1aac6679d4415aacf43cca8e026615d50b5d4f1a839aa3bee98.png" title=" Automatizador clicks on Elemento input con name name y texto first_nameRegisterPage (completed)" width="3456"/>
+                <img src="0932cbcfbc6ca1aac6679d4415aacf43cca8e026615d50b5d4f1a839aa3bee98.png" title=" Automatizador enters 'Juan Pruebas' into Elemento input con name name y texto first_nameRegisterPage" width="3456"/>
+                <img src="9a714a674f8abcb75285d2f82115f5516d3d57cc083b46bc4f183f8b76e1077e.png" title=" Automatizador enters 'Juan Pruebas' into Elemento input con name name y texto first_nameRegisterPage (completed)" width="3456"/>
+                <img src="9a714a674f8abcb75285d2f82115f5516d3d57cc083b46bc4f183f8b76e1077e.png" title=" Automatizador clicks on Elemento input con name name y texto last_nameRegisterPage" width="3456"/>
+                <img src="1296b8c9a52f2c6999a5dd29605c3a8265215a9569c0e718ba24378dff41b25b.png" title=" Automatizador clicks on Elemento input con name name y texto last_nameRegisterPage (completed)" width="3456"/>
+                <img src="1296b8c9a52f2c6999a5dd29605c3a8265215a9569c0e718ba24378dff41b25b.png" title=" Automatizador enters 'Sanchez Pruebas' into Elemento input con name name y texto last_nameRegisterPage" width="3456"/>
+                <img src="f36bddc8d40b0efaca04eade969f4ec081d6ad9affce8a5c8cfe54d8214fbfae.png" title=" Automatizador enters 'Sanchez Pruebas' into Elemento input con name name y texto last_nameRegisterPage (completed)" width="3456"/>
+                <img src="f36bddc8d40b0efaca04eade969f4ec081d6ad9affce8a5c8cfe54d8214fbfae.png" title=" Automatizador clicks on Elemento input con name name y texto phone_numberRegisterPage" width="3456"/>
+                <img src="cacdc4ffe6bbf21914c3a55faf6aaa3926b5d31f5a1808a2928841c60c942a3d.png" title=" Automatizador clicks on Elemento input con name name y texto phone_numberRegisterPage (completed)" width="3456"/>
+                <img src="cacdc4ffe6bbf21914c3a55faf6aaa3926b5d31f5a1808a2928841c60c942a3d.png" title=" Automatizador enters '32038838383' into Elemento input con name name y texto phone_numberRegisterPage" width="3456"/>
+                <img src="98a86673de9bee9d01fd5b874282c3d21f9f03f9fbaa38743980cfaac7afb41f.png" title=" Automatizador enters '32038838383' into Elemento input con name name y texto phone_numberRegisterPage (completed)" width="3456"/>
+                <img src="98a86673de9bee9d01fd5b874282c3d21f9f03f9fbaa38743980cfaac7afb41f.png" title=" Automatizador clicks on Elemento select con name name y texto countryListboxRegisterPage" width="3456"/>
+                <img src="4816562f05c4389427cc6c841226389098592810afb27a6ff57d0d0ad923c393.png" title=" Automatizador clicks on Elemento select con name name y texto countryListboxRegisterPage (completed)" width="3456"/>
+                <img src="4816562f05c4389427cc6c841226389098592810afb27a6ff57d0d0ad923c393.png" title=" Automatizador selects #value in Elemento select con name name y texto countryListboxRegisterPage" width="3456"/>
+                <img src="9917cc7551759d3255be80d1213bac76a62c7ccad0cee9d6c3a118330adfe382.png" title=" Automatizador selects #value in Elemento select con name name y texto countryListboxRegisterPage (completed)" width="3456"/>
+                <img src="9917cc7551759d3255be80d1213bac76a62c7ccad0cee9d6c3a118330adfe382.png" title=" Automatizador clicks on Elemento input con name name y texto cityRegisterPage" width="3456"/>
+                <img src="55e5f67ea4ad2b998bbbf9608c1190dbbf830a7f0b747862d5b70a3e81f8ea4c.png" title=" Automatizador clicks on Elemento input con name name y texto cityRegisterPage (completed)" width="3456"/>
+                <img src="55e5f67ea4ad2b998bbbf9608c1190dbbf830a7f0b747862d5b70a3e81f8ea4c.png" title=" Automatizador enters 'Bogota' into Elemento input con name name y texto cityRegisterPage" width="3456"/>
+                <img src="f3cd69ef31fab077aec77cdb9fae2cb32eb2b0476f6577cbe1e6760c7a35580b.png" title=" Automatizador enters 'Bogota' into Elemento input con name name y texto cityRegisterPage (completed)" width="3456"/>
+                <img src="f3cd69ef31fab077aec77cdb9fae2cb32eb2b0476f6577cbe1e6760c7a35580b.png" title=" Automatizador clicks on Elemento input con name name y texto addressRegisterPage" width="3456"/>
+                <img src="14f6cb25eaaa275d035d27f9a9457701496637a31cd07055576a77274da07f25.png" title=" Automatizador clicks on Elemento input con name name y texto addressRegisterPage (completed)" width="3456"/>
+                <img src="14f6cb25eaaa275d035d27f9a9457701496637a31cd07055576a77274da07f25.png" title=" Automatizador enters 'Calle falsa 123' into Elemento input con name name y texto addressRegisterPage" width="3456"/>
+                <img src="a9563573d2db51ffa11112f18cbc54793eab61f2f2b6a4555020c7c4c18223da.png" title=" Automatizador enters 'Calle falsa 123' into Elemento input con name name y texto addressRegisterPage (completed)" width="3456"/>
+                <img src="a9563573d2db51ffa11112f18cbc54793eab61f2f2b6a4555020c7c4c18223da.png" title=" Automatizador clicks on Elemento input con name name y texto state_/_province_/_regionRegisterPage" width="3456"/>
+                <img src="2dcdf30e4008d348fce6162abd4c2863fb2fcb041af237f67feee171422a9b23.png" title=" Automatizador clicks on Elemento input con name name y texto state_/_province_/_regionRegisterPage (completed): <span class='error-color'>ERROR</span>" width="3456"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.12</span>
+</div>
+</body>
+</html>

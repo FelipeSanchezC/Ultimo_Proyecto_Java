@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Validar el flujo de registros de usuarios" skipped="0" tests="1" time="29.44" timestamp="2023-11-04 09:20:36"><testcase name="Realizar el registro de forma correct de un usuario nuevo"><error message="element click intercepted: Element &lt;input name=&quot;state_/_province_/_regionRegisterPage&quot; type=&quot;text&quot; data-ng-model=&quot;secModel&quot; class=&quot;ng-pristine ng-untouched ng-valid ng-scope&quot;&gt; is not clickable at point (1142, 366). Other element would receive the click: &lt;label data-ng-click=&quot;labelClicked()&quot; data-ng-mouseout=&quot;labelOut()&quot;&gt;...&lt;/label&gt;&#10;  (Session info: chrome=119.0.6045.105)&#10;Build info: version: '4.8.0', revision: '267030adea'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '11.0.21'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ffefbb6812682c46f40c14acd589b8fb, clickElement {id=1AE51AE6C5D2E3DE56361EFA1701E1B3_element_1051}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/5j/5r7ngvb54bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53556/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (ffefbb6812682c46f40c14acd589b8fb)] -&gt; xpath: //input[@name='state_/_province_/_regionRegisterPage']]&#10;Session ID: ffefbb6812682c46f40c14acd589b8fb" type="org.openqa.selenium.ElementClickInterceptedException">element click intercepted: Element &lt;input name="state_/_province_/_regionRegisterPage" type="text" data-ng-model="secModel" class="ng-pristine ng-untouched ng-valid ng-scope"&gt; is not clickable at point (1142, 366). Other element would receive the click: &lt;label data-ng-click="labelClicked()" data-ng-mouseout="labelOut()"&gt;...&lt;/label&gt;
+  (Session info: chrome=119.0.6045.105)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ffefbb6812682c46f40c14acd589b8fb, clickElement {id=1AE51AE6C5D2E3DE56361EFA1701E1B3_element_1051}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/5j/5r7ngvb54bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53556/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (ffefbb6812682c46f40c14acd589b8fb)] -&gt; xpath: //input[@name='state_/_province_/_regionRegisterPage']]
+Session ID: ffefbb6812682c46f40c14acd589b8fb</error><system-err>element click intercepted: Element &lt;input name="state_/_province_/_regionRegisterPage" type="text" data-ng-model="secModel" class="ng-pristine ng-untouched ng-valid ng-scope"&gt; is not clickable at point (1142, 366). Other element would receive the click: &lt;label data-ng-click="labelClicked()" data-ng-mouseout="labelOut()"&gt;...&lt;/label&gt;
+  (Session info: chrome=119.0.6045.105)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '11.0.21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ffefbb6812682c46f40c14acd589b8fb, clickElement {id=1AE51AE6C5D2E3DE56361EFA1701E1B3_element_1051}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/5j/5r7ngvb54bq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:53556/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (ffefbb6812682c46f40c14acd589b8fb)] -&gt; xpath: //input[@name='state_/_province_/_regionRegisterPage']]
+Session ID: ffefbb6812682c46f40c14acd589b8fb
+tasks.register.createNewUser.performAs(createNewUser.java:73)
+stepDefinitions.registerUser.registerUser.completarInforRegistro(registerUser.java:22)
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+io.cucumber.java.Invoker.invoke(Invoker.java:24)
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:132)
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
+io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:132)
+io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:114)
+io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:115)
+io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:84)
+io.cucumber.core.runtime.Runtime.execute(Runtime.java:99)
+io.cucumber.core.runtime.Runtime.run(Runtime.java:82)
+</system-err></testcase></testsuite>
