@@ -16,3 +16,8 @@ Feature: Validar los flujos de login en la Web
     And Selecciono la opcion de Login en la pagina web
     When Ingreso las credenciales incorrectas usuario 'Pruebas112' y password 'Pruebas1'
     Then Valido que se presente el mensaje de control para usuario y contraseña erroneo
+
+  Escenario
+
+
+    #comentarios
