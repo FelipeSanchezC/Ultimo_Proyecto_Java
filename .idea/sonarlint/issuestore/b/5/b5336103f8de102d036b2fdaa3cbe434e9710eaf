@@ -1,0 +1,23 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(µàêÈûÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê†™
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(‚÷Ëä
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(èĞ¬£üÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(£ÏÎûÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ëÿÕÆùÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ïğİüÿÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÔøÍÂúÿÿÿÿ
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Å”’»
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(÷òîï
+d
+java:S1128"NRemove this unused import 'net.thucydides.core.scheduling.SerenityFluentWait'.(Šï«¯
+U
+java:S1128	"?Remove this unused import 'java.util.concurrent.TransferQueue'.(Äøô¦
