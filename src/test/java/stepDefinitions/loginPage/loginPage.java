@@ -21,15 +21,15 @@ import static utilities.constantes.ACTOR_NAME;
 
 public class loginPage {
 
-    @Before
-    public void setUp(){
-        setTheStage(new OnlineCast());
-    }
+//    @Before
+//    public void setUp(){
+//        setTheStage(new OnlineCast());
+//    }
 
-    @Given("Me encuentro en el Home de la pagina")
-    public void abrirPagina() {
-        theActorCalled(ACTOR_NAME).wasAbleTo(Open.browserOn(new homePageUi()));
-    }
+//    @Given("Me encuentro en el Home de la pagina")
+//    public void abrirPagina() {
+//        theActorCalled(ACTOR_NAME).wasAbleTo(Open.browserOn(new homePageUi()));
+//    }
 
 
     @And("Selecciono la opcion de Login en la pagina web")

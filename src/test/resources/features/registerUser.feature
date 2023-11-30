@@ -6,10 +6,10 @@ Feature: Validar el flujo de registros de usuarios
 
   @testCase3
   Scenario: Realizar el registro de forma correct de un usuario nuevo
-    Given Me encuentro en el Home de la pagina
+#    Given Me encuentro en el Home de la pagina
     And Selecciono la opcion de Login en la pagina web
     When Selecciono la opcion de Crear cuenta y complemento la informacion
-      |username|Pruebas961218|
+      |username|Pruebas961219|
       |email   |pruebas9612@pruebas.com|
       |password|PruebasP1|
     Then Valido que realice de forma el registro del usuario
