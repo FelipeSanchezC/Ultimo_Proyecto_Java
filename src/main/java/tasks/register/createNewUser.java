@@ -77,8 +77,8 @@ public class createNewUser implements Task {
                 Enter.theValue(CITY_ADDRESS).into(searchLocatorWithTypeAndName(TYPE_INPUT,ATRIBUTE_NAME,NAME_LBL_CITY_REGISTER)),
                 Click.on(searchLocatorWithTypeAndName(TYPE_INPUT,ATRIBUTE_NAME,NAME_LBL_ADDRESS_REGISTER)),
                 Enter.theValue(ADDRES).into(searchLocatorWithTypeAndName(TYPE_INPUT,ATRIBUTE_NAME,NAME_LBL_ADDRESS_REGISTER)),
-                Click.on(searchLocatorWithTypeAndName(TYPE_INPUT,ATRIBUTE_NAME,NAME_LBL_STATE_REGISTER)),
-                Enter.theValue(STATE).into(searchLocatorWithTypeAndName(TYPE_INPUT,ATRIBUTE_NAME,NAME_LBL_STATE_REGISTER)),
+//                Click.on(searchLocatorWithTypeAndName(TYPE_INPUT,ATRIBUTE_NAME,NAME_LBL_STATE_REGISTER)),
+//                Enter.theValue(STATE).into(searchLocatorWithTypeAndName(TYPE_INPUT,ATRIBUTE_NAME,NAME_LBL_STATE_REGISTER)),
                 Click.on(searchLocatorWithTypeAndName(TYPE_INPUT,ATRIBUTE_NAME,NAME_LBL_POSTALCODE_REGISTER)),
                 Enter.theValue(POSTAL_CODE).into(searchLocatorWithTypeAndName(TYPE_INPUT,ATRIBUTE_NAME,NAME_LBL_POSTALCODE_REGISTER))
         );
