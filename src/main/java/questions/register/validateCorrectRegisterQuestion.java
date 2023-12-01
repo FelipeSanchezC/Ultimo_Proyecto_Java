@@ -18,7 +18,7 @@ public class validateCorrectRegisterQuestion implements Question<Boolean> {
 
 
     public static Question<Boolean> registroExitoso(){
-        return new validateCorrectLoginQuestion();
+        return new validateCorrectRegisterQuestion();
     }
 
     @Override

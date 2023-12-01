@@ -7,8 +7,6 @@ l
 <src/test/java/stepDefinitions/registerUser/registerUser.java,a\d\ad3b681c9a23155220b0a9fe3417e1b217b6d9b5
 _
 /src/main/java/tasks/register/createNewUser.java,2\b\2bac84bdb28d162b877e4903a7dd3f107a714a16
-C
-serenity.properties,2\5\25f1bbdc8dba7ca4a4b90251f1ef69621b24a28c
 f
 6src/test/java/stepDefinitions/loginPage/loginPage.java,9\8\98593aa20ddb9e65fde83e66b3af5e396ffeb8a7
 \
@@ -19,10 +17,24 @@ P
  src/main/java/utilities/url.java,d\3\d323b1a5dfffcf278fbd92ef6683077ae21c3555
 P
  src/main/java/utilities/Url.java,0\b\0bfd3324860f9e2773b8f79448fb39fb0542e39f
-b
-2src/test/java/stepDefinitions/evelart/evelart.java,9\f\9f82d4f330025b580ff7bec3d937d3ee3232ae3e
 E
 serenenity.properties,3\7\37f83e61d7095b187003d86f33aa37e48d5111d0
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+\
+,src/main/java/tasks/login/loginPageTask.java,6\c\6cc92b16941f66c8cdd17f1f3a439f5812e35026
+u
+Esrc/main/java/questions/register/validateCorrectRegisterQuestion.java,0\1\01935c903a41bdf65f9df65a182b21b13917471c
+Y
+)src/main/java/utilities/constantesUi.java,1\f\1f9f40b19ead33f5314ff69f383828cac7ea5385
+W
+'src/main/java/utilities/constantes.java,1\c\1c7b6b8bec2cc50c2145915eecd2104fc5fc2850
+c
+3src/main/java/userInterfaces/commons/uiCommons.java,4\e\4e8812946ac4ad3437d239e3e1af58b5a555752a
+i
+9src/main/java/questions/login/validateIncorrectLogin.java,3\a\3a0429435ece41b05d77b6c5ad24c441cf95271f
+o
+?src/main/java/questions/login/validateCorrectLoginQuestion.java,d\1\d104a69a7cc537ee24c235263d11cac90e7b9c98
+]
+-src/test/resources/features/loginPage.feature,7\d\7daa4a71a6a2e9529eba5de9f85fc53326bca9f0

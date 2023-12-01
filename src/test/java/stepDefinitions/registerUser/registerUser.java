@@ -10,7 +10,6 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActor;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.Matchers.is;
-import static questions.login.validateCorrectLoginQuestion.CorrectLogin;
 import static questions.register.validateCorrectRegisterQuestion.registroExitoso;
 import static tasks.register.createNewUser.conDatos;
 import static utilities.constantes.ACTOR_NAME;
@@ -26,7 +25,7 @@ public class registerUser {
 
     @When("Valido que realice de forma el registro del usuario")
     public void validarCorrectoRegistro() {
-        System.out.println(theActor(ACTOR_NAME).asksFor(registroExitoso()));
+        System.out.println(theActor(ACTOR_NAME).asksFor(registroExitoso()).toString());
 
         theActorInTheSpotlight().should(
                 seeThat(registroExitoso(), is(true)).
