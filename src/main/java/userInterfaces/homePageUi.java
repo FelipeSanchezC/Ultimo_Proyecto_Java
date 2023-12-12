@@ -20,4 +20,5 @@ public class homePageUi extends PageObject {
     public final static Target txt_user_logged = Target.the("locator del texto del usuario ingresado").locatedBy("//*[@id='menuUserLink']/span");
     public final static Target txt_msj_control_user_incorrect = Target.the("Locator del texto que se presenta cuando se ingresa username y password incorrecto").located(By.id("signInResultMessage"));
     public final static Target btn_create_account = Target.the("Locator del boton para crear una nueva cuenta").locatedBy("//a[@translate='CREATE_NEW_ACCOUNT']");
+    public final static Target product_laptops = Target.the("Producto del home con laptops").located(By.id("laptopsTxt"));
 }

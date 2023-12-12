@@ -38,3 +38,15 @@ o
 ?src/main/java/questions/login/validateCorrectLoginQuestion.java,d\1\d104a69a7cc537ee24c235263d11cac90e7b9c98
 ]
 -src/test/resources/features/loginPage.feature,7\d\7daa4a71a6a2e9529eba5de9f85fc53326bca9f0
+i
+9src/test/java/stepDefinitions/buyProducts/buyLaptops.java,8\1\812c7dfd8ed36494fa91e0af2abc51f236261905
+d
+4src/main/java/tasks/login/ingresarUsuariostasks.java,3\1\31fbfd96b981ea2bfb084db3cc1cba4f7f977ae9
+\
+,src/main/java/tasks/login/completeLogin.java,2\5\25eb01eefb1f06be92a2b77fe61791585e4bcf95
+h
+8src/main/java/tasks/selectProduct/selectProductTask.java,3\a\3a79871cb0a93f263fe94fe2a5016003dadfbafb
+d
+4src/main/java/userInterfaces/products/laptopsUI.java,d\d\dda9f3affff812148b89842a32f8f42238ee18aa
+K
+.github/workflows/hello.yml,b\5\b5fc469b39b2051c3e6a1de558b9738745fae241
